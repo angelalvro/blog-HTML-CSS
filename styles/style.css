@@ -1,0 +1,154 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --cafeOscuro: rgb(82, 52, 41);;
+    --amarillo: #FFCA41;
+    --azulCielo: #8ed1e7;
+    --grisOscuro: #686868;
+    --amarilloVerdoso: #C6CE000;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+/** Header **/
+.header {
+    width: 100%;
+    background-color: var(--amarilloVerdoso);
+}
+
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/** Header Navegacion **/
+.contenedor {
+    margin: 0 auto;
+}
+
+/** Main **/
+.contenido-principal {
+    display: flex;
+    flex-direction: column;
+}
+
+.entrada {
+    border-bottom: 1px solid var(--gris);
+    margin: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .entrada {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/** Footer **/
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--cafeOscuro);
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem 1rem;
+        background-color: var(--cafeOscuro);
+        margin-top: 4rem;
+        width: 100%;
+    }
+}
+
+/** Globales **/
+
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+
+/** Utilidades **/
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+.boton {
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton--primario {
+    background-color: var(--negro);
+}
+.boton--secundario {
+    background-color: var(--primario);
+}
