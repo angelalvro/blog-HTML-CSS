@@ -10,7 +10,7 @@
     --amarillo: #FFCA41;
     --azulCielo: #8ed1e7;
     --grisOscuro: #686868;
-    --amarilloVerdoso: #C6CE000;
+    --amarilloVerdoso: #C6CE00;
 }
 html {
     box-sizing: border-box;
@@ -34,6 +34,7 @@ body {
 .header {
     width: 100%;
     background-color: var(--amarilloVerdoso);
+    text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -71,24 +72,15 @@ body {
     }
 }
 
-/** Footer **/
-.footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--cafeOscuro);
-    margin-top: 4rem;
+.entrada__imagen{
+    align-self: center;
 }
 
-@media (min-width: 768px) {
-    .footer {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 3rem 1rem;
-        background-color: var(--cafeOscuro);
-        margin-top: 4rem;
-        width: 100%;
-    }
+/** Footer **/
+.footer {
+    text-align: center;
+    background-color: var(--amarilloVerdoso);
+    width: 100%;
 }
 
 /** Globales **/
