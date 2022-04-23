@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web Blog Difusión</title>
+    <meta name="description" content="Página web Blog Difusión">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <h1>Difusión de contenidos multimedia vía web</h1>
+    </header>
+
+    <main class="contenido-principal">
+        <article class="entrada-ejercicios">
+            <h4>Layout Index</h4>
+            <p>
+                EL layout general esta configurado de tal forma que disponemos principalmente de tres elementos. 
+            </p>
+            <ul> 
+                <li>Header: Ocupa todo el ancho de la página con un color de texto negro sobre un amarillo verdoso</li> 
+                <li>Main: Dispone de display flex a traves de la clase contenido-principal. Esta compuesto de tres articulos, uno para cada ejercicio</li> 
+                <li>Footer: Ocupa todo el ancho de la página con un color de texto negro sobre un amarillo verdoso </li> 
+            </ul>
+            <picture class="entrada__imagen">
+                <img src="../img/layout.PNG" alt="imagen class contenido-principal">
+                <p>Clase contenido-principal</p>
+            </picture>
+        </article>
+        <article class="entrada-ejercicios">
+            <h4>Layout de las plantillas ejercicios</h4>
+            <p>
+                EL layout de las tres plantillas de los ejercicios sigue la misma filosofia que el layout general. Podemos destacar, que en este caso el display de los articulos es el la direccion de column, de manera que las imagenes se situan debajo de los textos explicativos. 
+            </p>
+            <picture class="entrada__imagen">
+                <img src="../img/layoutEjercicios.PNG" alt="imagen class entrada-ejercicios">
+                <p>Clase entrada-ejercicios</p>
+            </picture>
+        </article>
+        <article class="entrada-ejercicios">
+            <h4>Estructura</h4>
+            <p>
+                Dentro del blog se ha usado tanto selectores como clases, primándose las clases ya que se aprovecha mejor el código CSS desarrollado. De esta forma se obliga a realizar el marcado semántico muy estructurado.
+            </p>
+            <p>Por otro lado, el blog tiene una estructura semántica, validándose el código HTML. Solo nos encontramos con algun Warnig devido a la falta de encabezados en algunos de los articulos. En nuestro caso el encabazado esta enbebido en el subarticulo.</p>
+            <picture class="entrada__imagen">
+                <img src="../img/w3c.PNG" alt="imagen warning W3c">
+                <p>Resultado del validador HTML</p>
+            </picture>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <h5>Ángel Álvarez Rodríguez - Master en ingenieria web - Universidad de Oviedo</h5>
+    </footer>
+    
+</body>
