@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web Blog Difusión</title>
+    <meta name="description" content="Página web Blog Difusión">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="home"><h1>Difusión de contenidos multimedia vía web</h1></a>
+    </header>
+
+    <main class="contenido-principal">
+        <article class="entrada-ejercicios">
+            <h4>Funcionalidad</h4>
+            <p>
+                Se ha construido una aplicación utilizando WebSockets. Esta aplicación dispone de un canvas que permite a los usuarios realizar dibujos colaborativos.
+            </p>
+            <picture class="entrada__imagen">
+                <img class="img" src="../img/app.PNG" alt="imagen class contenido-principal">
+                <p>App en uso</p>
+            </picture>
+        </article>
+        <article class="entrada-ejercicios">
+            <h4>Cliente</h4>
+            <ul> 
+                <li>El cliente permite crear objetos de características aleatorias</li> 
+                <li>La aplicación Client envía como dato al servidor el ultimo objeto creado</li> 
+                <li>Si se arrastra uno de los objetos, también se envía para ser modificado en el servidor</li> 
+                <li>Para identificar los objetos y poder distinguir si se ha creado o se ha movido, les asignamos un Id en el momento de su creación</li>
+            </ul>
+        </article>
+        <article class="entrada-ejercicios">
+            <h4>Servidor</h4>
+            <ul> 
+                <li>Construido con WebSockets</li> 
+                <li>Recibe la información del objeto y lo almacena</li> 
+                <li>También se encarga de la gestión de los clientes, asignándoles un ID único</li> 
+                <li>La parte servidora almacena en un array los objetos enviados por el cliente, así como los Id de los clientes conectados</li> 
+            </ul>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <h5>Ángel Álvarez Rodríguez - Master en ingeniería web - Universidad de Oviedo</h5>
+    </footer>
+
+    
+</body>
